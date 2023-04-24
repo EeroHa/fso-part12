@@ -1,0 +1,7 @@
+Script started on 2023-04-24 14:55:12+03:00 [TERM="xterm-256color" TTY="/dev/pts/8" COLUMNS="80" LINES="25"]
+[?2004h]0;user@Ellikirja: ~/workspace/fso-part12/script-answers[01;32muser@Ellikirja[00m:[01;34m~/workspace/fso-part12/script-answers[00m$ echo "hello o[Kworld"
+[?2004lhello world
+[?2004h]0;user@Ellikirja: ~/workspace/fso-part12/script-answers[01;32muser@Ellikirja[00m:[01;34m~/workspace/fso-part12/script-answers[00m$ [?2004l
+exit
+
+Script done on 2023-04-24 14:55:29+03:00 [COMMAND_EXIT_CODE="0"]
