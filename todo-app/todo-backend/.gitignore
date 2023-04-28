@@ -61,4 +61,4 @@ typings/
 .next
 
 # randonm txt files
-.txt
+*.txt
