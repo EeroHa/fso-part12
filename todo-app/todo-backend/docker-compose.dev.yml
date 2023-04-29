@@ -12,6 +12,15 @@ services:
     volumes:
       - ./mongo/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js
       - mongo_data:/data/db
+  redis:
+    image: redis
+    ports:
+      - 3123:6379
+    command: redis-server
+    volumes:
+      - redis_data:/data
+    restart: always
 
 volumes:
   mongo_data:
+  redis_data:

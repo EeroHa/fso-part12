@@ -1,0 +1,13 @@
+###
+
+GET http://localhost:3000/todos
+
+###
+
+POST http://localhost:3000/todos
+Content-Type: application/json
+
+{
+    "text": "Testing 12",
+    "done": false
+}
