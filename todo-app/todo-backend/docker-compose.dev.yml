@@ -16,7 +16,7 @@ services:
     image: redis
     ports:
       - 3123:6379
-    command: redis-server
+    command: ['redis-server', '--appendonly', 'yes']
     volumes:
       - redis_data:/data
     restart: always
