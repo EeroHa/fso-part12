@@ -4,15 +4,15 @@ services:
     volumes:
       - ./todo-frontend/:/usr/src/app
     environment:
-      - REACT_APP_BACKEND_URL=http://server:3000/api
+      - REACT_APP_BACKEND_URL=http://nginx/api
 
   server:
-      image: todo-backend-dev
-      volumes:
-        - ./todo-backend/:/usr/src/app
-      environment:
-       - MONGO_URL=mongodb://the_username:the_password@mongo:27017/the_database
-       - REDIS_URL=redis://redis:6379
+    image: todo-backend-dev
+    volumes:
+      - ./todo-backend/:/usr/src/app
+    environment:
+      - MONGO_URL=mongodb://the_username:the_password@mongo:27017/the_database
+      - REDIS_URL=redis://redis:6379
 
   nginx:
     image: nginx:1.20.1
@@ -24,3 +24,4 @@ services:
     depends_on:
       - app # wait for the frontend container to be started
       - server
+
